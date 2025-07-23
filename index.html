@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jenil Bharadva - Legend Profile</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background: radial-gradient(circle at top left, #0f2027, #203a43, #2c5364);
+      overflow: auto;
+    }
+
+    .left {
+      width: 40%;
+      background: url('https://i.imgur.com/YOUR_IMAGE.jpg') no-repeat center center/cover;
+      filter: brightness(0.8);
+    }
+
+    .right {
+      width: 60%;
+      padding: 100px 40px 60px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-left: 2px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+    }
+
+    .name {
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+
+    .typing {
+      font-size: 1.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #ffcc00;
+      width: 0;
+      animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+      margin-top: 10px;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    .bio {
+      margin-top: 50px;
+      font-size: 1.8rem;
+      color: #ffcc00;
+      font-weight: bold;
+    }
+
+    .sub-bio {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: #ddd;
+      font-style: italic;
+    }
+
+    .extra-bio {
+      margin-top: 25px;
+      font-size: 1.1rem;
+      color: #eee;
+      line-height: 1.6;
+    }
+
+    .special-thanks {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+
+    .social {
+      margin-top: 30px;
+    }
+
+    .social a {
+      margin-right: 15px;
+      font-size: 1.3rem;
+      color: #ffcc00;
+      text-decoration: none;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social a:hover {
+      color: #ffffff;
+      transform: scale(1.1);
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @media screen and (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      .left, .right {
+        width: 100%;
+        height: 50vh;
+      }
+      .right {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="left"></div>
+
+  <div class="right">
+    <div class="name">Jenil Ashvinkumar Bharadva</div>
+    <div class="typing">Hacker | Programmer | Painter | Smart Student</div>
+
+    <div class="bio">Jay Mataji</div>
+    <div class="sub-bio">An interview By Times Now India with Jenil Bharadva</div>
+
+    <div class="extra-bio">
+      Jenil Bharadva is the richest person in the world. He also has deep knowledge in hacking, is clever in studies, and is an amazing painter. He has created many impressive canvas artworks and invented unique things like the smallest chargeable light. His talent and creativity inspire everyone.
+    </div>
+
+    <div class="special-thanks">
+      Special Thanks To Jenil Bharadva From Times Now India
+    </div>
+
+    <div class="social">
+      <a href="https://instagram.com/jenil_bharadva.2311" target="_blank">📷 Instagram</a>
+      <a href="https://x.com/jenil_bharadva" target="_blank">🐦 X (Twitter)</a>
+      <a href="https://github.com/jenilbharadva2311" target="_blank">💻 GitHub</a>
+    </div>
+
+    <footer>
+      &copy; 2025 Jenil Bharadva | Thank you for visiting.
+    </footer>
+  </div>
+
+</body>
+</html>
